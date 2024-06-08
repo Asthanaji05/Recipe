@@ -1,0 +1,103 @@
+:root {
+  --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+}
+
+.card {
+    width: 80%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: rgb(58, 3, 14);
+    color: orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.07) 2px,
+      transparent 2px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 2px, transparent 2px),
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+  }
+.card div{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1%;
+  margin-right: 3%;
+}
+  /* Style for the image */
+  .card div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  /* Style for the content inside the card */
+  .card-content {
+    padding: 10px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex span{
+    margin-right:1%;
+  }
+ #recImg{
+  width:150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+ .recipie{
+  border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: rgb(255, 0, 0);
+    width:80%;
+    scroll-padding-bottom: 10px;
+    padding-block: 1%;
+    padding-inline: 2%;
+    animation: rotateAnimation 1s forwards;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+    }
+ @keyframes rotateAnimation {
+  0% {
+      transform: rotate(0deg);
+      background-color: rgb(248, 193, 173);
+      color:rgb(177, 0, 0);
+  }
+  50%{
+    transform: rotate(-3deg);
+  }
+  100% {
+      transform: rotate(0deg);
+      background-color: #FFE8C5;
+      color: rgb(0, 0, 0);
+  }
+}
+ span{
+  padding-inline: 10px;
+  color:rgb(251, 173, 4);
+  font-weight: 900;
+ }

@@ -1,0 +1,165 @@
+.navbar{width:100%;
+}
+.navbar ul{
+  background-color: #f8c16f;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+}
+.navbar ul li{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1.5%;
+  height: 1vh;
+  color:rgb(0, 0, 0);
+}
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(245, 242, 212);
+  padding-block: 14vh;
+  padding-inline-start: 1%;
+  margin: 0;
+  height: 70vh;
+}
+.hero div h1,.fancy h1{
+  font-size: 2rem;
+}
+#hero{
+  background-color: orangered;
+  color:white;
+}
+.fill{
+  background-color: #f5baa4;
+  margin: 0;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.fill::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #f5baa4;
+  z-index: -1;
+  left:0;
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+}
+
+.filler{
+  padding-inline-start: 1%;
+  height: 10vh;
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.filler input{
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color: orangered;
+  cursor: text;
+  margin-right: 10px;
+  border-radius: 100vmax;
+  border: 1px solid black;
+  padding-inline-start: 1%;
+  caret-color: orangered;
+  caret-shape:underscore;
+}
+.filler button{
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(254, 186, 60);
+  padding-inline-start: 1%;
+}
+
+
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #FFA27F;
+}
+
+#chimg{
+  height:60svh;
+  width:50svw;
+  min-height: 200px;
+  max-width:400px;
+}
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFA27F;
+}
+
+.fancy {
+  padding: 1em;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+
+  /* At the bottom of our background stack,
+     let's have a misty grey solid color */
+  background-color: #e4e4d9;
+
+  /* We stack linear gradients on top of each
+     other to create our color strip effect.
+     As you will notice, color gradients are
+     considered to be images and can be
+     manipulated as such */
+  background-image: linear-gradient(175deg, rgb(0 0 0 / 0%) 95%, #ba3b89 95%),
+                    linear-gradient( 85deg, rgb(0 0 0 / 0%) 95%, #e82791 95%),
+                    linear-gradient(175deg, rgb(0 0 0 / 0%) 90%, #f75283 90%),
+                    linear-gradient( 85deg, rgb(0 0 0 / 0%) 92%, #f60046 92%),
+                    linear-gradient(175deg, rgb(0 0 0 / 0%) 85%, #e91984 85%),
+                    linear-gradient( 85deg, rgb(0 0 0 / 0%) 89%, #ed1111 89%)
+}
+
+
+/* angled div */
+.slanted-div {
+  position: relative;
+  padding: 200px 0;
+  background: #FFA27F;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* where the magic happens */
+.slanted-div:before {
+  content: '';
+  width:100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  left:0;
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+}
+
+
+.slanted-div:after {
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+}

@@ -1,0 +1,12 @@
+.recipie{
+    border-radius: 8px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      color: rgb(253, 148, 148) !important;
+      width:80%;
+      scroll-padding-bottom: 10px;
+      padding-block: 1%;
+      padding-inline: 2%;
+      animation: rotateAnimation 2s forwards;
+      }
